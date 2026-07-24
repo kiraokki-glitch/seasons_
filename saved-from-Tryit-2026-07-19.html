@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<h1 id="h1">Літо</h1>
+
+<p id="season">Літо — це найтепліша пора року між весною та осінню з найвищими температурами та найдовшими світловими днями. Для Північної півкулі календарний сезон триває з 1 червня до 31 серпня. Це період відпусток, канікул, зеленої природи, пляжного відпочинку та активного проведення часу просто неба.</p>
+
+<img id="myImage" src="https://www.volynnews.com/files/news/2023/10-04/369584/78.jpg" width="300px"><br><br>
+
+<button onclick="winter()">Зима</button>
+<button onclick="spring()">Весна</button>
+<button onclick="summer()">Літо</button>
+<button onclick="autumn()">Осінь</button>
+
+<script>
+let heading1 = document.getElementById("h1")
+let season = document.getElementById("season")
+
+function winter(){
+  heading1.innerHTML = "Зима";
+  season.innerHTML = "Зима — це найхолодніша пора року, яка настає після осені та передує весні. У помірних широтах вона триває три місяці: грудень, січень та лютий. Характеризується коротким світловим днем, низькими температурами та опадами у вигляді снігу";
+ heading1.style.color = "white";
+ season.style.color = "white";
+ document.body.style.backgroundColor = "lightblue";
+ document.getElementById("myImage").src = "https://antikor.ua/foto/articles_foto/2025/03/10/755902.jpg?20250310100514";
+}
+function spring(){
+heading1.innerHTML = "Весна";
+season.innerHTML = "Весна — це перехідна пора року між зимою та літом, для якої характерне поступове потепління, збільшення світлового дня та пробудження природи. Вона символізує оновлення, цвітіння, а в народній творчості та літературі також асоціюється з молодістю і початком нового життєвого циклу.";
+ heading1.style.color = "hotpink";
+ season.style.color = "hotpink";
+ document.body.style.backgroundColor = "peachpuff";
+ document.getElementById("myImage").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvTxjNLaG0YUgsATyQz_wflv0RSszDc8XyptY7OwOCu6kD5e0l86s2K_U&s=10" 
+}
+function summer(){
+heading1.innerHTML = "Літо";
+season.innerHTML = "Літо — це найтепліша пора року між весною та осінню з найвищими температурами та найдовшими світловими днями. Для Північної півкулі календарний сезон триває з 1 червня до 31 серпня. Це період відпусток, канікул, зеленої природи, пляжного відпочинку та активного проведення часу просто неба.";
+ heading1.style.color = "khaki";
+ season.style.color = "khaki";
+ document.body.style.backgroundColor = "darkorange";
+ document.getElementById("myImage").src = "https://www.volynnews.com/files/news/2023/10-04/369584/78.jpg";
+}
+function autumn(){
+heading1.innerHTML = "Осінь";
+season.innerHTML = "Осінь — це перехідна пора року між літом та зимою, для якої характерне поступове зменшення світлового дня та зниження температури. Це час збору врожаю, підготовки природи до холодів та яскравих змін у довкіллі.";
+ heading1.style.color = "indianred";
+ season.style.color = "indianred";
+ document.body.style.backgroundColor = "sandybrown";
+ document.getElementById("myImage").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg8qqyu2xjL3tB6GdYo6Doob_Vlk-PYhl8c-tHViceOaX52Lrh1E6YHi4&s=10"
+
+}
+
+</script>
+
+
+
+</body>
+</html>
